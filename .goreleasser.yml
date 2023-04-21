@@ -19,7 +19,7 @@ universal_binaries:
 
 brews:
   -
-    name: AHCHCLI
+    name: ahchcli
     homepage: "https://github.com/amrhsyn/ahchcli/"
     tap:
       owner: amrhsyn

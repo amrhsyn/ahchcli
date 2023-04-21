@@ -19,15 +19,26 @@ var rootCmd = &cobra.Command{
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
 	Run: func(cmd *cobra.Command, args []string) {
-		flagVal, err := cmd.Flags().GetBool("ahch")
+		ahch, err := cmd.Flags().GetBool("amir")
+		marat, err := cmd.Flags().GetBool("marat")
+		manas, err := cmd.Flags().GetBool("manas")
 		if err != nil {
+			fmt.Println(err.Error())
 			return
 		}
-		if flagVal {
-			fmt.Println("Hello world alternative")
+		if ahch {
+			fmt.Println("react native is my only love")
 			return
 		}
-		fmt.Println("hello world")
+		if marat {
+			fmt.Println("ping pong")
+			return
+		}
+		if manas {
+			fmt.Println("(:")
+			return
+		}
+
 	},
 }
 
@@ -51,4 +62,6 @@ func init() {
 	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 	rootCmd.Flags().BoolP("ahch", "a", false, "for ahch")
+	rootCmd.Flags().BoolP("marat", "m", false, "for ahch")
+	rootCmd.Flags().BoolP("manas", "k", false, "for ahch")
 }
