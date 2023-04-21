@@ -22,6 +22,7 @@ var rootCmd = &cobra.Command{
 		ahch, err := cmd.Flags().GetBool("amir")
 		marat, err := cmd.Flags().GetBool("marat")
 		manas, err := cmd.Flags().GetBool("manas")
+		uzair, err := cmd.Flags().GetBool("uzair")
 		if err != nil {
 			fmt.Println(err.Error())
 			return
@@ -36,6 +37,10 @@ var rootCmd = &cobra.Command{
 		}
 		if manas {
 			fmt.Println("(:")
+			return
+		}
+		if uzair {
+			fmt.Println("marat: number 1 trash talker ")
 			return
 		}
 
@@ -64,4 +69,5 @@ func init() {
 	rootCmd.Flags().BoolP("ahch", "a", false, "for ahch")
 	rootCmd.Flags().BoolP("marat", "m", false, "for ahch")
 	rootCmd.Flags().BoolP("manas", "k", false, "for ahch")
+	rootCmd.Flags().BoolP("uzair", "u", false, "for ahch")
 }
