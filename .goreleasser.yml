@@ -25,8 +25,8 @@ brews:
       owner: amrhsyn
       name: homebrew-amrhsyn
     commit_author:
-      name: ahch
-      email: a.cheraghi1997@gmail.com
+      name: amrhsyn
+      email: ahch.pv@gmail.com
 
 checksum:
   name_template: 'checksums.txt'
