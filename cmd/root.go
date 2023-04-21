@@ -19,28 +19,73 @@ var rootCmd = &cobra.Command{
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
 	Run: func(cmd *cobra.Command, args []string) {
-		ahch, err := cmd.Flags().GetBool("amir")
+		amir, err := cmd.Flags().GetBool("amir")
 		marat, err := cmd.Flags().GetBool("marat")
 		manas, err := cmd.Flags().GetBool("manas")
 		uzair, err := cmd.Flags().GetBool("uzair")
+		dmitriy, err := cmd.Flags().GetBool("dmitriy")
+		florian, err := cmd.Flags().GetBool("florian")
+		wina, err := cmd.Flags().GetBool("wina")
+		wade, err := cmd.Flags().GetBool("wade")
+		matias, err := cmd.Flags().GetBool("matias")
+		maria, err := cmd.Flags().GetBool("maria")
+		smith, err := cmd.Flags().GetBool("smith")
+		andre, err := cmd.Flags().GetBool("andre")
+		milad, err := cmd.Flags().GetBool("milad")
 		if err != nil {
 			fmt.Println(err.Error())
 			return
 		}
-		if ahch {
-			fmt.Println("react native is my only love")
+		if amir {
+			fmt.Println("react native is my only love 😑")
 			return
 		}
 		if marat {
-			fmt.Println("ping pong")
+			fmt.Println("ping pong 😏")
 			return
 		}
 		if manas {
-			fmt.Println("(:")
+			fmt.Println("karim 🐣")
 			return
 		}
 		if uzair {
-			fmt.Println("marat: number 1 trash talker ")
+			fmt.Println("marat: number 1 trash talker 👻")
+			return
+		}
+		if dmitriy {
+			fmt.Println("don't hesitate 🤠")
+			return
+		}
+		if florian {
+			fmt.Println("Flow 🤟")
+			return
+		}
+		if wade {
+			fmt.Println("Hallowwwww, shalalalaaaaaaa 👀")
+			return
+		}
+		if wina {
+			fmt.Println("berlin ): ")
+			return
+		}
+		if matias {
+			fmt.Println("beach ")
+			return
+		}
+		if maria {
+			fmt.Println("mariaaaaaaaaaaaaaa ")
+			return
+		}
+		if smith {
+			fmt.Println("baby ... ")
+			return
+		}
+		if andre {
+			fmt.Println("404 ... ")
+			return
+		}
+		if milad {
+			fmt.Println("come onnnnnn ... ")
 			return
 		}
 
@@ -65,9 +110,18 @@ func init() {
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
-	rootCmd.Flags().BoolP("ahch", "a", false, "for ahch")
-	rootCmd.Flags().BoolP("marat", "m", false, "for ahch")
-	rootCmd.Flags().BoolP("manas", "k", false, "for ahch")
-	rootCmd.Flags().BoolP("uzair", "u", false, "for ahch")
+	rootCmd.Flags().BoolP("toggle", "t", false, "nothing")
+	rootCmd.Flags().BoolP("amir", "a", false, "nothing")
+	rootCmd.Flags().BoolP("marat", "m", false, "nothing")
+	rootCmd.Flags().BoolP("manas", "k", false, "nothing")
+	rootCmd.Flags().BoolP("uzair", "u", false, "nothing")
+	rootCmd.Flags().BoolP("dmitriy", "d", false, "nothing")
+	rootCmd.Flags().BoolP("florian", "f", false, "nothing")
+	rootCmd.Flags().BoolP("wade", "w", false, "nothing")
+	rootCmd.Flags().BoolP("wina", "b", false, "nothing")
+	rootCmd.Flags().BoolP("matias", "s", false, "nothing")
+	rootCmd.Flags().BoolP("maria", "z", false, "nothing")
+	rootCmd.Flags().BoolP("smith", "h", false, "nothing")
+	rootCmd.Flags().BoolP("andre", "p", false, "nothing")
+	rootCmd.Flags().BoolP("milad", "p", false, "nothing")
 }
