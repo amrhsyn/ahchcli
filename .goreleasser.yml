@@ -23,7 +23,7 @@ brews:
     homepage: "https://github.com/amrhsyn/ahchcli/"
     tap:
       owner: amrhsyn
-      name: homebrew-ahchcli
+      name: homebrew-amrhsyn
     commit_author:
       name: ahch
       email: a.cheraghi1997@gmail.com
