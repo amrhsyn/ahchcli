@@ -49,7 +49,7 @@ var rootCmd = &cobra.Command{
 			return
 		}
 		if uzair {
-			fmt.Println("marat: number 1 trash talker 👻")
+			fmt.Println("aba waghoom zo")
 			return
 		}
 		if dmitriy {
@@ -57,7 +57,7 @@ var rootCmd = &cobra.Command{
 			return
 		}
 		if florian {
-			fmt.Println("Flow 🤟")
+			fmt.Println("Flow SharedFlow StateFlow 🤟")
 			return
 		}
 		if wade {
